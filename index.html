@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gelo-Devs — On Call Developer</title>
+  <link rel="shortcut icon" href="angelo.png" type="image/x-icon">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS (Animate On Scroll) CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+<!-- ============================================================
+     MOBILE MENU
+============================================================ -->
+<div id="mobile-menu">
+  <button id="mobile-close" class="icon-btn" style="position:absolute;top:1.5rem;right:1.5rem;font-size:1.2rem;">
+    <i class="fa fa-times"></i>
+  </button>
+  <a href="#home"         onclick="closeMobile()">Home</a>
+  <a href="#about"        onclick="closeMobile()">About</a>
+  <a href="#work"         onclick="closeMobile()">Work</a>
+  <a href="#testimonials" onclick="closeMobile()">Testimonials</a>
+  <a href="#contact"      onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo"><span>●</span> GELO-DEVS</a>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <button class="icon-btn" id="theme-toggle" title="Toggle dark mode">
+      <i class="fa fa-moon" id="theme-icon"></i>
+    </button>
+    <button class="icon-btn hamburger" id="hamburger-btn">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================================================
+    HERO
+============================================================ -->
+<section id="home">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+
+  <div class="hero-inner">
+    <div>
+      <p class="hero-available">● Available for work</p>
+      <h1 class="hero-name-top">HEY, I'M</h1>
+      <h2 class="hero-name-accent">ANGELO JAMES</h2> <!-- Updated from "YOUR NAME" -->
+
+      <div class="hero-role-wrapper">
+        <p class="hero-role" id="hero-role">— Web Developer</p>
+      </div>
+
+      <p class="hero-desc">
+        Transforming ideas into stunning digital experiences — websites,
+        systems, brand visuals, and video content that captivate and deliver real results.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-dark">
+          View My Work &nbsp;<i class="fa fa-arrow-right fa-sm"></i>
+        </a>
+        <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=angelojamesdegracia100@gmail.com" class="hero-link">Let's talk</a>
+      </div>
+    </div>
+
+    <!-- New Hero Image Section -->
+    <div class="hero-image-container" data-aos="fade-left">
+      <div class="hero-banner-bg"></div>
+      <img src="angelo.png" alt="Angelo James" class="hero-img-png">
+    </div>
+  </div>
+
+  <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+    <span>Scroll</span>
+    <i class="fa fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+<section id="about">
+  <div class="about-inner">
+    <div class="about-grid">
+      <div data-aos="fade-right">
+        <p class="section-label">01 — About Me</p>
+        <h2 class="section-title">CRAFTING<br>MEANINGFUL<br>DIGITAL<br>EXPERIENCES</h2>
+      </div>
+      <div class="about-right" data-aos="fade-left" data-aos-delay="100">
+        <p class="about-lead">
+          Hey, I’m a multi-disciplinary creator passionate about building visually compelling and user-friendly digital solutions.
+        </p>
+        <p class="about-body">
+          With a keen eye for design and a strong grasp of technology, I create digital solutions that are both visually appealing and functional, turning ideas into seamless systems while solving real-world problems through modern tech. I am a graduate of a 2-year Associate in Computer Technology and currently pursuing a BS in Information Technology, and as a fast learner, I quickly adapt to new tools and environments. I prioritize client vision above all, blending strategy, creativity, and technical skills to deliver results that align with your goals and bring your ideas to life exactly as you imagine them.
+        </p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=angelojamesdegracia100@gmail.com" target="_blank" class="btn btn-dark">
+          Get In Touch &nbsp;<i class="fa fa-envelope fa-sm"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="services-grid" id="services-grid"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PORTFOLIO / WORK
+============================================================ -->
+<section id="work">
+  <div class="work-inner">
+    <div class="work-header" data-aos="fade-up">
+      <div>
+        <p class="section-label">02 — My Work</p>
+        <h2 class="section-title">PORTFOLIO</h2>
+      </div>
+      <p class="work-sub">Explore my projects; pictures and videos are available upon request.</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="projects-grid" id="projects-grid"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MODAL
+============================================================ -->
+<div id="modal-overlay" onclick="closeModal(event)">
+  <div id="modal">
+    <button class="modal-close" onclick="closeModal()"><i class="fa fa-times"></i></button>
+    <div class="modal-hero"><img id="modal-img" src="" alt="" /></div>
+    <div class="modal-body">
+      <div class="modal-top">
+        <div>
+          <span class="tag" id="modal-category"></span>
+          <h3 class="modal-title" id="modal-title" style="margin-top:0.6rem;"></h3>
+        </div>
+        <div id="modal-stars" class="stars" style="flex-shrink:0;padding-top:0.5rem;"></div>
+      </div>
+
+      <!-- System picture -->
+      <div class="modal-system-img" id="modal-system-img-wrap">
+        <img id="modal-system-img" src="" alt="System Screenshot" />
+      </div>
+
+      <!-- Problem / Solution -->
+      <div class="modal-info-grid">
+        <div class="modal-info-card">
+          <p class="modal-info-label"><i class="fa fa-triangle-exclamation"></i> &nbsp;Problem</p>
+          <p class="modal-info-text" id="modal-problem"></p>
+        </div>
+        <div class="modal-info-card">
+          <p class="modal-info-label"><i class="fa fa-lightbulb"></i> &nbsp;Proposed Solution</p>
+          <p class="modal-info-text" id="modal-solution"></p>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="modal-info-card" style="margin-bottom:1rem;">
+        <p class="modal-info-label"><i class="fa fa-circle-info"></i> &nbsp;About The System</p>
+        <p class="modal-info-text" id="modal-details"></p>
+      </div>
+
+      <!-- Tech -->
+      <div class="modal-tech-wrap">
+        <p class="modal-info-label"><i class="fa fa-microchip"></i> &nbsp;Tech Stack</p>
+        <div class="tech-list" id="modal-tech"></div>
+      </div>
+
+      <div id="modal-demo-wrap" style="margin-top:0.5rem;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section id="testimonials">
+  <div class="testimonials-inner">
+    <div data-aos="fade-up">
+      <p class="section-label">03 — Kind Words</p>
+      <h2 class="section-title" style="margin-bottom:2.5rem;">TESTIMONIALS</h2>
+    </div>
+
+    <div class="testimonial-carousel" data-aos="fade-up" data-aos-delay="100">
+      <div class="testimonial-slides" id="testimonial-slides"></div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" onclick="tSlide(-1)"><i class="fa fa-chevron-left fa-sm"></i></button>
+        <button class="carousel-btn" onclick="tSlide(1)"><i class="fa fa-chevron-right fa-sm"></i></button>
+        <div class="carousel-dots" id="carousel-dots"></div>
+        <span class="carousel-count" id="carousel-count">01 / 04</span>
+      </div>
+    </div>
+
+    <div class="t-cards-grid" id="t-cards-grid"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MARQUEE
+============================================================ -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <span class="marquee-item">WEB DEV <span>✦</span></span>
+    <span class="marquee-item">SYSTEM DEV <span>✦</span></span>
+    <span class="marquee-item">DIGITAL DESIGN <span>✦</span></span>
+    <span class="marquee-item">VIDEO EDITING <span>✦</span></span>
+    <span class="marquee-item">BRANDING <span>✦</span></span>
+    <span class="marquee-item">UI/UX <span>✦</span></span>
+    <span class="marquee-item">WEB DEV <span>✦</span></span>
+    <span class="marquee-item">SYSTEM DEV <span>✦</span></span>
+    <span class="marquee-item">DIGITAL DESIGN <span>✦</span></span>
+    <span class="marquee-item">VIDEO EDITING <span>✦</span></span>
+    <span class="marquee-item">BRANDING <span>✦</span></span>
+    <span class="marquee-item">UI/UX <span>✦</span></span>
+  </div>
+</div>
+
+<!-- ============================================================
+     FOOTER / CONTACT
+============================================================ -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div data-aos="fade-right">
+        <p class="section-label">04 — Contact</p>
+        <h2 class="footer-big-title">LET'S<br>WORK<br>TOGETHER</h2>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=angelojamesdegracia100@gmail.com"target="_blank" class="footer-email">
+          angelojamesdegracia100@email.com &nbsp;<i class="fa fa-arrow-up-right-from-square fa-sm"></i>
+        </a>
+      </div>
+
+      <div class="footer-right" data-aos="fade-left">
+        <div class="social-links" id="social-links"></div>
+        <div class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+          Back to top &nbsp;<i class="fa fa-arrow-up fa-xs"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form-wrap" data-aos="fade-up" data-aos-delay="100">
+      <p class="section-label" style="margin-bottom:1.25rem;">
+        <i class="fa fa-paper-plane"></i> &nbsp;Send Me a Message
+      </p>
+      <form id="contact-form" onsubmit="submitForm(event)">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="cf-name">Full Name</label>
+            <input class="form-input" id="cf-name" name="name" type="text" placeholder="e.g. Juan Dela Cruz" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-email">Email Address</label>
+            <input class="form-input" id="cf-email" name="email" type="email" placeholder="yourname@email.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-phone">Phone Number (optional)</label>
+            <input class="form-input" id="cf-phone" name="phone" type="tel" placeholder="+63 9XX XXX XXXX" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-service">Service Needed</label>
+            <select class="form-select" id="cf-service" name="service" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option>Web Development</option>
+              <option>System Development</option>
+              <option>Digital Design</option>
+              <option>Video Editing</option>
+              <option>Full Package</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-budget">Budget Range</label>
+            <select class="form-select" id="cf-budget" name="budget">
+              <option value="" disabled selected>Select a range...</option>
+              <option>Below P5,000</option>
+              <option>P5,000 - P15,000</option>
+              <option>P15,000 - P30,000</option>
+              <option>P30,000 - P50,000</option>
+              <option>P50,000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-timeline">Project Timeline</label>
+            <select class="form-select" id="cf-timeline" name="timeline">
+              <option value="" disabled selected>When do you need it?</option>
+              <option>ASAP (less than 1 week)</option>
+              <option>1 - 2 weeks</option>
+              <option>1 month</option>
+              <option>2 - 3 months</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label class="form-label" for="cf-message">Message / Project Details</label>
+            <textarea class="form-textarea" id="cf-message" name="message" placeholder="Tell me about your project - what you need, what problem it solves, any references, etc." required></textarea>
+          </div>
+        </div>
+        <div class="form-footer-row">
+          <p class="form-note"><i class="fa fa-lock fa-xs"></i> Your info goes straight to my inbox. No spam, ever.</p>
+          <button type="submit" class="btn-submit" id="submit-btn">
+            <i class="fa fa-paper-plane fa-sm"></i> Send Message
+          </button>
+        </div>
+        <div class="form-success" id="form-success">
+          <i class="fa fa-circle-check fa-lg"></i>
+          Message sent! Angelo will get back to you within 24 hours.
+        </div>
+      </form>
+    </div>
+    <!-- END CONTACT FORM -->
+
+    <div class="footer-bottom" style="margin-top:3rem;">
+      <p>&copy; 2026 Angelo James De Gracia. All rights reserved.</p>
+      <p>Built with HTML &middot; CSS &middot; Vanilla JS &middot; Font Awesome &middot; AOS</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     AOS JS
+============================================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
