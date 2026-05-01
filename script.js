@@ -109,7 +109,7 @@ const DB = {
       desc:       'Centralized barangay health records and automated immunization monitoring system.',
       rating:     5,
       image:      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80',
-      systemImg:  'barangay.jpg',
+      systemImg:  'Barangay.jpg',
       problem:    'Barangay health workers managed resident health data through manual paper-based records, making immunization tracking, health categorization, and reporting highly inefficient.',
       solution:   'Developed an admin-only web platform that digitizes resident health records, dynamically categorizes residents by health status, and manages specialized maternal and child immunization records — all in a secure offline-capable local server environment.',
       details:    'A health information system for barangay-level use. Features include resident registration and health profiling, dynamic health status categorization, maternal health record tracking, child immunization scheduling and monitoring, automated email reports via PHPMailer, and an offline-capable local deployment using MySQLi for reliable performance without internet dependency.',
